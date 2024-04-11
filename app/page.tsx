@@ -5,23 +5,15 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time',
-    },
-    {
-      action: 'tx',
-      label: 'Send Base Sepolia',
-      target: `${NEXT_PUBLIC_URL}/api/tx`,
-      postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
-    },
+      action: 'link',
+      label: 'Event Store - Singapore Base Frames Hackathon',
+      target: 'https://slice.so/slicer/sgbfh',
+    }
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
+    src: `${NEXT_PUBLIC_URL}/SingaporeBaseFramesHackathon.png`,
     aspectRatio: '1:1',
-  },
-  input: {
-    text: 'Tell me a story',
-  },
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
+  }
 });
 
 export const metadata: Metadata = {
